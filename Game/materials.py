@@ -42,6 +42,12 @@ class Materials():
             # entity made of leaves
             pass
 
+        def rocks(self, position):
+            self._position = position
+            self._texture = "grass"
+            self._color = color.gray
+
+
         def crete_object(self):
             return Voxel(
                   position=self._position,

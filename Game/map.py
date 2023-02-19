@@ -16,7 +16,11 @@ class Landscape(Materials):
                                     voxel = self.grass(position=(length,height,width))
                                     voxel = self.crete_object()
 
-                                else: 
+                                elif  height == z-2: 
+                                    voxel = self.earth(position=(length,height,width))
+                                    voxel = self.crete_object()
+                                
+                                elif height == z-3:
                                     voxel = self.earth(position=(length,height,width))
                                     voxel = self.crete_object()
 
