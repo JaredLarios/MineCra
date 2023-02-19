@@ -21,7 +21,7 @@ class Landscape(Materials):
                                     voxel = self.crete_object()
                                 
                                 elif height == z-3:
-                                    voxel = self.earth(position=(length,height,width))
+                                    voxel = self.rocks(position=(length,height,width))
                                     voxel = self.crete_object()
 
             def trees(self):

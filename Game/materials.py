@@ -44,7 +44,7 @@ class Materials():
 
         def rocks(self, position):
             self._position = position
-            self._texture = "grass"
+            self._texture = "grass_tintable"
             self._color = color.gray
 
 
