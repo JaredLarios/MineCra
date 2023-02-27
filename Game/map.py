@@ -14,15 +14,15 @@ class Landscape(Materials):
                             for length in range(x):
                                 if height == z-1:
                                     voxel = self.grass(position=(length,height,width))
-                                    voxel = self.crete_object()
+                                    voxel = self.create_object()
 
                                 elif  height == z-2: 
                                     voxel = self.earth(position=(length,height,width))
-                                    voxel = self.crete_object()
+                                    voxel = self.create_object()
                                 
                                 elif height == z-3:
                                     voxel = self.rocks(position=(length,height,width))
-                                    voxel = self.crete_object()
+                                    voxel = self.create_indestructible_object()
 
             def trees(self):
                     #add randomly an amount and of trees and the program choose
@@ -34,7 +34,7 @@ class Landscape(Materials):
                             for length in range(self._x):
                                 if width == y and length == x:
                                     voxel = self.wood(position=(length,height,width))
-                                    voxel = self.crete_object()
+                                    voxel = self.create_object()
 
                      
                     for height in range(z+6):
@@ -42,7 +42,7 @@ class Landscape(Materials):
                             for length in range(self._x):
                                  if (width >= y-1 and width <= y+1)  and (length >= x-1 and length <= x+1) and height > z:
                                     voxel = self.grass(position=(length,height,width))
-                                    voxel = self.crete_object()
+                                    voxel = self.create_object()
 
 
 

@@ -1,5 +1,5 @@
 from ursina import *
-from Game.Services.ursina_service import Voxel
+from Game.Services.ursina_service import Voxel, IndVoxel
 class Materials():
     # Materials made by entities of ursina
     
@@ -48,11 +48,19 @@ class Materials():
             self._color = color.gray
 
 
-        def crete_object(self):
+        def create_object(self):
             return Voxel(
                   position=self._position,
                   model=self._model,
                   texture=self._texture,
                   mycolor=self._color
             )
+        
+        def create_indestructible_object(self):
+            return IndVoxel(
+                  position=self._position,
+                  model=self._model,
+                  texture=self._texture,
+                  mycolor=self._color
+            ) 
         
