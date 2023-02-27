@@ -38,6 +38,8 @@ landscape = Landscape()
 #         voxel = materials.grass(position=(x,0,z))
 #         voxel = materials.crete_object()
 
+scene.fog_density= 0.01
+Sky(texture="sky_sunset")
 landscape.ground(x=25, y=25, z=3)
 for x in range(8):
     landscape.trees()
